@@ -2,8 +2,8 @@ source 'https://rubygems.org'
 
 group :development, :test do
 	gem 'sqlite3'
-	gem 'rspec'
-	gem 'rspec-rails'
+	# gem 'rspec', '~> 3.4.4'
+	# gem 'rspec-rails', '~> 3.4.4'
 	gem 'factory_girl'
 	gem 'factory_girl_rails'
 	gem 'rspec_api_test'
@@ -16,9 +16,9 @@ group :production do
 end
 
 gem 'unicorn'
-gem 'json'
+gem 'json', '1.8.5'
 gem 'bourbon'
-gem 'rails', '4.0.8'
+gem 'rails', '4.2.8'
 gem 'sass-rails', '~> 4.0.2'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -36,4 +36,4 @@ group :doc do
 	gem 'sdoc', require: false
 end
 
-ruby "2.2.4"
+ruby "2.5.1"
